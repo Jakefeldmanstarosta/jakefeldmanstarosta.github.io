@@ -1,5 +1,4 @@
-/* Global */
-
+/*global*/
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;  margin: 0 auto;
   padding: 2rem;
@@ -9,8 +8,7 @@ body {
   background: #fafafa;
 }
 
-/* Header */
-
+/*header*/
 header {
   display: flex;
   align-items: center;
@@ -25,20 +23,25 @@ header {
   object-fit: cover;
 }
 
-/* Typography */
-
+/*typography*/
 h1 {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
 }
-
 section {
   margin-top: 2rem;
 }
+.intro {
+  margin-top: 3rem;
+  padding-left: 1rem;
+  border-left: 4px solid #111;
+  font-size: 1rem;
+  max-width: 600px;
+}
 
-/* Nav */
 
+/*navigation*/
 nav {
   margin-top: 0.5rem;
   display: flex;
@@ -46,8 +49,7 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Links */
-
+/*links*/
 a {
   color: #0044cc;
   text-decoration: none;
@@ -55,15 +57,79 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #707070;
+  transform: translateY(-1px);
 }
 
-/* Lists */
-
+/*lists*/
 ul {
   padding-left: 1.2rem;
 }
 
 li {
   margin-bottom: 0.5rem;
+}
+
+/*projects section*/
+.projects {
+  margin-top: 3rem;
+}
+
+/*grid*/
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/*card styling*/
+.project-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/*make card clickable*/
+.project-card a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image,
+.project-video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #f1f1f1;
+  display: block;
+}
+
+/* Caption area */
+.project-caption {
+  padding: 0.8rem 1rem 1rem;
+}
+
+.project-caption h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-caption p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }

@@ -7,8 +7,66 @@
   </head>
 
   <body>
-    <section>
-        <p>coming soon...</p>
+    <section class="projects">
+      <h2>builds</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <a href="https://github.com/Jakefeldmanstarosta/rocket-recall">
+            <video muted playsinline class="project-image project-video">
+              <source src="vid/rocket_recall.mp4" type="video/mp4">
+              your browser doesn't support playing the video
+            </video>
+            <div class="project-caption">
+              <h3>rocketRecall</h3>
+              <p>Spaced-repetition quiz app in C++/Qt</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/Jakefeldmanstarosta/terraform-earth">
+            <img src="img/terraform_earth.png"
+              alt="Terraform Earth map"
+              class="project-image">
+            <div class="project-caption">
+              <h3>terraform earth</h3>
+              <p>Interactive carbon capture optimization map in Python</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://queensengineeringcomp.com/">
+            <video src="vid/catapult.mov" muted playsinline class="project-image project-video">
+              <source src="vid/catapult.mov" type="video/mov">
+              your browser doesn't support playing the video
+            </video>
+            <div class="project-caption">
+              <h3>QEC catapult</h3>
+              <p>The only design to acheive a perfect launch in the Queen's Engineering competition senior design challenge</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
     </section>
+
+    <script>
+      document.querySelectorAll('.project-card').forEach(card => {
+        const video = card.querySelector('.project-video');
+        if (!video) return; // skip image cards
+
+        card.addEventListener('mouseenter', () => {
+          video.play();
+        });
+
+        card.addEventListener('mouseleave', () => {
+          video.pause();
+        });
+      });
+    </script>
+
   </body>
 </html>
