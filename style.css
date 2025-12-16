@@ -19,8 +19,16 @@ header {
 
 .profile-pic {
   width: 160px;
-  border-radius: 24px;
   object-fit: cover;
+}
+
+.icon {
+  height: 16px;
+  color: #383838;
+}
+.icon:hover {
+  transform: scale(1.01);
+
 }
 
 /*typography*/
@@ -58,7 +66,6 @@ a {
 
 a:hover {
   color: #707070;
-  transform: translateY(-1px);
 }
 
 /*lists*/
