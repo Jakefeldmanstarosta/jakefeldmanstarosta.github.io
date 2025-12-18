@@ -1,72 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <section class="projects">
-      <h2>builds</h2>
+    <section class="projects-grid">
 
-      <div class="projects-grid">
-
-        <article class="project-card">
-          <a href="https://github.com/Jakefeldmanstarosta/rocket-recall">
-            <video muted playsinline class="project-image project-video">
-              <source src="vid/rocket_recall.mp4" type="video/mp4">
-              your browser doesn't support playing the video
-            </video>
-            <div class="project-caption">
-              <h3>rocketRecall</h3>
-              <p>Spaced-repetition quiz app in C++/Qt</p>
+        <a href="https://cucai.ca/2025_proceedings.pdf#page=207" class="project-card">
+            <img src="img/vae.png">
+            <div class="overlay">
+                <p>Turn Mozart to Metallica with ML. Adversarial VAE for symbolic music genre transfer. Published in CUCAI 2025 conference proceedings.</p>
             </div>
-          </a>
-        </article>
+            <h4>Music Genre Transfer</h4>
+        </a>
 
-        <article class="project-card">
-          <a href="https://github.com/Jakefeldmanstarosta/terraform-earth">
-            <img src="img/terraform_earth.png"
-              alt="Terraform Earth map"
-              class="project-image">
-            <div class="project-caption">
-              <h3>terraform earth</h3>
-              <p>Interactive carbon capture optimization map in Python</p>
+        <a class="project-card">
+            <img src="img/humidifier.jpg">
+            <div class="overlay">
+                <p>Needed a humidifier so I built one. Piezoelectric disk vibrates very fast. So fast in fact, it breaks water.</p>
             </div>
-          </a>
-        </article>
-
-        <article class="project-card">
-          <a href="https://queensengineeringcomp.com/">
-            <video src="vid/catapult.mov" muted playsinline class="project-image project-video">
-              <source src="vid/catapult.mov" type="video/mov">
-              your browser doesn't support playing the video
-            </video>
-            <div class="project-caption">
-              <h3>QEC catapult</h3>
-              <p>The only design to achieve a perfect launch in the Queen's Engineering Competition senior design challenge. Built in 6 hours.</p>
+            <h4>Humidifier</h4>
+        </a>
+        
+        <a href="https://github.com/Jakefeldmanstarosta/terraform-earth" class="project-card">
+            <img src="img/terraform_earth.png">
+            <div class="overlay">
+                
+                <p>To capture carbon, you need atmospheric carbon. To convert it to gas, you need energy. To make it useful, you need to pump it around. This interactive map combines all three.</p>
             </div>
-          </a>
-        </article>
+            <h4>Carbon Capture Map</h4>
+        </a>
 
-      </div>
+        <a href="https://queensengineeringcomp.com/" class="project-card">
+            <img src="img/catapult.jpg">
+            <div class="overlay">
+                <p>It'll beat you at pong. Only design to get a perfect launch at the Queen's Engineering Competition. Built in 6 hours. </p>
+            </div>
+            <h4>Pong Bot</h4>
+        </a>
+
+
+        <a href="https://github.com/Jakefeldmanstarosta/rocket-recall" class="project-card">
+            <img src="img/rocket_recall.png">
+            <div class="overlay">
+                <p>Rocket Recall: Spaced repition quiz app in QT/C++.</p>
+            </div>
+            <h4>Quiz App</h4>
+        </a>
+
+
+
+
     </section>
 
-    <script>
-      document.querySelectorAll('.project-card').forEach(card => {
-        const video = card.querySelector('.project-video');
-        if (!video) return; // skip image cards
-
-        card.addEventListener('mouseenter', () => {
-          video.play();
-        });
-
-        card.addEventListener('mouseleave', () => {
-          video.pause();
-        });
-      });
-    </script>
-
-  </body>
+</body>
 </html>
