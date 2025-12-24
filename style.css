@@ -83,8 +83,6 @@ li {
   position: relative;
   display: block;
   overflow: hidden;
-  
-
 }
 
 .project-card img {
@@ -117,4 +115,8 @@ li {
   padding: 1rem;
   font-size: 0.9rem;
   color: #555;
+}
+
+.project-image {
+  position: relative;
 }
