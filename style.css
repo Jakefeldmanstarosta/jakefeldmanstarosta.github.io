@@ -120,3 +120,15 @@ li {
 .project-image {
   position: relative;
 }
+
+/*back to home link*/
+.back-home {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #929292;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}
