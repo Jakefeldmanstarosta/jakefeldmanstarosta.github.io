@@ -132,6 +132,19 @@ li {
 .back-home:hover {
   text-decoration: underline;
 }
+
+
+.dropdown summary{
+  color: #929292;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.dropdown summary:hover {
+  text-decoration: underline;
+}
+
 .dropdown::after {
   margin-left: 0.4rem;
   font-size: 0.8em;
