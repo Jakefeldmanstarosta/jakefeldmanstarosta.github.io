@@ -29,19 +29,32 @@ header {
 /*typography*/
 h1 {
   margin: 0;
+  color: #555555;
   font-size: 1.5rem;
   font-weight: 600;
+}
+h3 {
+  color: #9c9c9c;
+  font-weight: 600;
+  text-transform: lowercase;
+
 }
 section {
   color: #555555;
   margin-top: 2rem;
 }
-.intro {
+p {
   color: #555555;
-  margin-top: 3rem;
   font-size: 1rem;
 }
 
+body{
+  color: #555555;
+}
+/*lists*/
+li {
+  color: inherit;
+}
 
 /*navigation*/
 nav {
@@ -61,14 +74,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/*lists*/
-ul {
-  padding-left: 1.2rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
 
 /*projects*/
 
