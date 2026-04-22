@@ -77,53 +77,45 @@ a:hover {
 
 /*projects*/
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+.projects-list {
+  margin-top: 2rem;
+  padding-bottom: 20rem;
 }
 
-.project-card{
+.project-item {
+  margin-bottom: 1.5rem;
+}
+
+.project-name {
   position: relative;
-  display: block;
-  overflow: hidden;
+  display: inline-block;
 }
 
-.project-card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.project-card .overlay {
+.project-hover-img {
   position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.9);
+  left: calc(100% + 0.75rem);
+  top: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 10;
 }
 
-.project-card:hover .overlay {
+.project-name:hover .project-hover-img {
   opacity: 1;
 }
 
-.project-card h4 {
-  text-align: center;
-  text-transform: capitalize;
-  color: #333;
-  margin-top: 0.5rem;
+.project-item ul {
+  margin: 0.25rem 0 0 0;
+  padding-left: 1.2rem;
 }
 
-.project-card p {
-  padding: 1rem;
-  font-size: 0.9rem;
+.project-item li {
+  font-size: 0.95rem;
   color: #555;
-}
-
-.project-image {
-  position: relative;
 }
 
 /*back to home link*/
